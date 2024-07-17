@@ -17,7 +17,7 @@
 
 #include "../../../Project/GameObject/Character/Player/Player.h"
 #include "../../../Project/GameObject/Character/EnemyManager/EnemyManager.h"
-#include "../../../Project/GameObject/Character/EnemyManager/Enemy/Enemy.h"
+#include "../../../Project/GameObject/Character/EnemyManager/IEnemy/Enemy.h"
 
 #include "../../Tsumi/PostEffect/IPostEffect/Absent/AbsentEffect.h"
 

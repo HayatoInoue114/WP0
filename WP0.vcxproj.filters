@@ -16,5 +16,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\Blast\Blast.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\IEnemy.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\Blast\Blast.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\IEnemy.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

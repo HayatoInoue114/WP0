@@ -141,7 +141,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\Blast\Blast.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\IEnemy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\Blast\Blast.h" />
+    <ClInclude Include="TsumiEngine\Project\GameObject\Character\EnemyManager\IEnemy\IEnemy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

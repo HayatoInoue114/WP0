@@ -5,7 +5,8 @@
 
 #include "../../GameObject.h"
 
-#include "Enemy/Enemy.h"
+#include "IEnemy/IEnemy.h"
+#include "IEnemy/Blast/Blast.h"
 
 
 // Player前方宣言
@@ -35,7 +36,7 @@ public: // メンバ関数
 	void SetPlayer(Player* setPlayer) { this->player_ = setPlayer; }
 
 	// EnemyListの取得
-	std::list<std::shared_ptr<Enemy>>& GetEnemyList() { return this->enemyList_; }
+	std::list<std::shared_ptr<IEnemy>>& GetEnemyList() { return this->enemyList_; }
 
 #pragma endregion 
 
@@ -61,7 +62,7 @@ private: // メンバ変数
 	WorldTransform transform_{};
 
 	// EnemyのLIst配列
-	std::list<std::shared_ptr<Enemy>> enemyList_;
+	std::list<std::shared_ptr<IEnemy>> enemyList_;
 
 	// Vector3Scope。エネミーの湧き範囲
 	ScopeVec3 scope3_{};

@@ -35,12 +35,12 @@ void EnemyManager::Update()
 	transform_.UpdateMatrix();
 
 	// EnemyListの更新処理
-	for (std::shared_ptr<Enemy> enemy : enemyList_) {
+	for (std::shared_ptr<IEnemy> enemy : enemyList_) {
 		enemy->Update();
 	}
 
 	// 死亡フラグが立っていたら削除
-	enemyList_.remove_if([](std::shared_ptr<Enemy> enemy) {
+	enemyList_.remove_if([](std::shared_ptr<IEnemy> enemy) {
 		if (enemy->IsDead()) {
 			enemy.reset();
 			return true;
@@ -80,7 +80,7 @@ void EnemyManager::Draw3D(Camera* camera)
 	flagModel_->Draw(transform_, camera);
 
 	// EnemyListの描画
-	for (std::shared_ptr<Enemy> enemy : enemyList_) {
+	for (std::shared_ptr<IEnemy> enemy : enemyList_) {
 		enemy->Draw3D(camera);
 	}
 }
@@ -97,7 +97,7 @@ void EnemyManager::AddNewEnemy()
 void EnemyManager::CreateNewEnemy()
 {
 	// 新しいEnemyのインスタンス
-	std::shared_ptr<Enemy> newEnemy = std::make_unique<Enemy>();
+	std::shared_ptr<IEnemy> newEnemy = std::make_unique<IEnemy>();
 
 	// 初期座標。多少ランダムに湧く
 	Vector3 initPos = 
