@@ -1,0 +1,59 @@
+{
+    "name": "scene",
+    "objects": [
+        {
+            "type": "MESH",
+            "name": "立方体",
+            "transform": {
+                "translation": [
+                    2.0,
+                    0.0,
+                    0.0
+                ],
+                "rotation": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scaling": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "file_name": "Gu",
+            "collder": {
+                "type": "collider_EMPTY",
+                "center": "collider_EMPTY",
+                "size": "collider_EMPTY"
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "平面",
+            "transform": {
+                "translation": [
+                    -2.0,
+                    30.661163330078125,
+                    0.0
+                ],
+                "rotation": [
+                    -0.0,
+                    89.99999237060547,
+                    0.0
+                ],
+                "scaling": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "file_name": "Bou",
+            "collder": {
+                "type": "collider_EMPTY",
+                "center": "collider_EMPTY",
+                "size": "collider_EMPTY"
+            }
+        }
+    ]
+}
